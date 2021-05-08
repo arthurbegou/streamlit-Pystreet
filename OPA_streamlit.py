@@ -114,7 +114,7 @@ Notre idée sous-jacente est que dans une marché très volatile, une stratégie
                 
 if page == '3- Backtesting':
     #st.header("3- Backtesting")
-    st.image('./images/Backtesting.png')
+    st.image('./images/backtesting.png')
     st.subheader("Qu'est ce que le Backtesting ?")
     st.markdown("""
                 Le backtesting ou test rétro-actif de validité consiste à tester la pertinence d'une modélisation ou d'une stratégie en s'appuyant sur un large ensemble de données historiques réelles. 
