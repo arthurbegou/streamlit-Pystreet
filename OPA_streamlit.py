@@ -100,6 +100,8 @@ df['target'] = df['target'].apply(lambda x : 1 if x >= 0.015 else 0)
                 Les meilleurs paramètres trouvés gràce au gridsearch appliqué au modèle GradientBoostingClassifier sont {'max_depth': 1, 'min_samples_split': 2, 'n_estimators': 30}
                 """)
     st.subheader("Définition de la stratégie de trading")
+    st.image('./images/strategie.png')
+
     st.markdown("""
                 La stratégie repose sur la prediction de la volatilité effectué précédemment par Machine learning.
 
