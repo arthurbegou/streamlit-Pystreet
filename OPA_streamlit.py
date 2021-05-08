@@ -26,8 +26,8 @@ st.sidebar.info("__Auteurs__: \n \n \n \n \n Arthur BEGOU [Linkedin](https://bit
 
 #Page Introduction
 if page == '1- Introduction':
-    st.header("1- Introduction")
-    st.image('./images/test banner intro.jpg')
+    st.image('./images/introduction.png')
+    #st.header("1- Introduction")
     st.markdown("""
                 En finance, __la volatilité__ est l'ampleur des variations du cours d'un actif financier (actions, obligations, devises ou matières premières). Elle sert de paramètre de quantification du risque de rendement et de prix de l'actif. Lorsque la volatilité est élevée, la possibilité de gain est plus importante, mais le risque de perte l'est aussi.
 
@@ -41,7 +41,8 @@ __Alors, prêt à nous confier votre épargne ?__""")
 #Page Modélisation
            
 if page == '2- Modelisation':
-    st.header("2- Modelisation")
+    st.image('./images/modelisation.png')
+    #st.header("2- Modelisation")
     st.subheader("Objectif")
     st.markdown("""
                 L'objectif de notre modélisation par Machine learning est de réaliser un modèle permettant de prédire au mieux la volatilité de notre action
