@@ -174,7 +174,7 @@ if page == '3- Backtesting':
       
 if page == '4- Conclusions':
     #st.header("4- Conclusions")
-    st.image('./images/conclusions.png')
+    st.image('./images/conclusion.png')
     st.subheader("Conclusions")
     st.subheader("Axes d'améliorations")
 
