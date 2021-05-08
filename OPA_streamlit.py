@@ -49,8 +49,8 @@ if page == '2- Modelisation':
 """)
 
     st.subheader("Choix de la volatilité")
-    st.markdown("""
     st.image('./images/volatilite.png')
+    st.markdown("""
 Nous avons choisi d'estimer la volatilité car contrairement à la prédiction du prix de l'action, la prédiction de la volatilité est possible sur la base des données des jours précédents.   
 
 Cette variable cible Volatilité est créée à partir du retour sur investissement
