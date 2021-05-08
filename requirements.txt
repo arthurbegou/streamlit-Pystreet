@@ -3,3 +3,4 @@ pandas==1.2.4
 joblib==1.0.1
 bokeh==2.2.3
 backtesting==0.3.1
+streamlit==0.80.0
