@@ -201,13 +201,7 @@ if page == '4- Conclusion':
                 * Combiner plusieurs stratégies et notamment avec des stratégies d'analyse
                 * Seuils de déclenchement
                 """)
-    st.markdown("__Changement du seuil de la volatilité__")
-
-    st.markdown("__Imaginer une stratégie totalement différente __")
    
-    st.markdown("__Combiner plusieurs stratégies et notamment avec des stratégies d'analyse __")
-   
-    st.markdown("__Seuils de déclenchement__")
    
 
 
