@@ -51,8 +51,8 @@ if page == '2- Modelisation':
     st.subheader("Choix de la volatilité")
     st.image('./images/volatilite.png')
     st.markdown("""
-                La volatilité quantifie la dispersion d'une série temporelle'
-                Nous avons choisi d'estimer la volatilité car contrairement à la prédiction du prix de l'action, sa prédiction est possible sur la base des données des jours précédents.   
+                La volatilité quantifie la dispersion d'une série temporelle.
+                Nous l'avons choisi comme variable cible car contrairement à la prédiction du prix de l'action, la prédiction de la volatilité est possible sur la base des données des jours précédents.   
                 La volatilité est créée à partir du retour sur investissement
 """)
     st.markdown("__Formule du calcul Retour sur Investissement__")
@@ -64,6 +64,7 @@ if page == '2- Modelisation':
     st.markdown("""
                 Pour améliorer les performances de notre modèle, nous créons une série de nouvelle variables
                 """)
+    st.image('./images/features.png')
     st.code("""
 # Ajout de l'historique des prix des 10 jours précédents (variable 'Open_t-i')
 N = 10
@@ -175,38 +176,29 @@ if page == '3- Backtesting':
           st.bokeh_chart(fig)
           st.write(output)
       
-if page == '4- Conclusions':
+if page == '4- Conclusion':
     #st.header("4- Conclusions")
-    st.image('./images/conclusion.png')
-    st.subheader("Conclusion")
-    st.markdown("""
-                Notre idée de départ, exploiter la volatilité du marché, évoque évidemment le trading haute fréquence (High Frequency Trading) largement utilisé dans le monde de la finance. Cependant, la robustesse de notre algorithme n'est pas suffisante. En effet, même si des gains sont enregistrés, ils le sont seulement sur certaines actions. D'une façon générale, cet algorithme ne permet pas de gagner de façon certaine. 
-                """)
+    st.subheader("Récapitulatif")
+    st.image('./images/recapitulatif.png')
+
     st.subheader("1- Améliorations des données ")
-    st.markdown("__Changement du seuil de la volatilité__")
-    st.markdown("""
-                Le seuil de volatilité est initialement défini à 0.015; cette valeur est la valeur médiane de la volatilité; cependant, il serait intéressant de faire varier ce seuil pour étudier son impact sur la performance de notre modèle.
-                """)
-    
+    st.markdown("__Exploiter une autre valeur cible que la volatilité__")
+
+     
     st.subheader("2- Améliorations du machine learning ")
     st.markdown("__Entrainer les données sur l'ensemble du dataset__")
-    st.markdown("""
-                Le dataset initial contient 
-                """)
+    st.markdown("__Utiliser plusieurs sources pour prédire la volatilité__")
+   
+    
     st.subheader("3- Améliorations de la stratégie")
+    st.markdown("__Changement du seuil de la volatilité__")
+
     st.markdown("__Imaginer une stratégie totalement différente __")
-    st.markdown("""
-                Le dataset initial contient 
-                """)
-    st.markdown("__Combiner plusieurs stratégies__")
-    st.markdown("""
-                Le dataset initial contient 
-                """)
+   
+    st.markdown("__Combiner plusieurs stratégies et notamment avec des stratégies d'analyse __")
+   
     st.markdown("__Seuils de déclenchement__")
-    st.markdown("""
-                Lorsque le seuil de volatilité est atteint notre modèle décide de vendre ou d'acheter sans effectuer aucun autre contrôle. En réalité, les traders fixes des pourcentages de perte et de gains acceptables, il s'agit des niveaux de support et de résistance. La décision prise par le modèle devrait être assujettie à un seuil de pourcentage de gain minimum à partir duquel l'ordre de vente est donné et à un seuil de perte acceptable à partir duquel l'ordre d'achat est donné. Le seuil de déclenchement à la baisse suppose que le trader accepte d'acheter une action pour laquelle une perte est déjà en cours.
-Le modèle développé n'évalue pas le montant de l'investissement à réaliser. Pour la gestion d'un portefeuille d'action, le paramétrage de la proportion d'investissement sur chaque action du portefeuille est nécessaire, par exemple en se basant sur le risque associé à chaque action
-                """)
+   
 
 
 
