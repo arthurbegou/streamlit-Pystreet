@@ -183,15 +183,23 @@ if page == '4- Conclusion':
     st.image('./images/recapitulatif.png')
 
     st.subheader("1- Améliorations des données ")
-    st.markdown("__Exploiter une autre valeur cible que la volatilité__")
+    st.markdown("* Exploiter une autre valeur cible que la volatilité")
 
      
     st.subheader("2- Améliorations du machine learning ")
-    st.markdown("__Entrainer les données sur l'ensemble du dataset__")
-    st.markdown("__Utiliser plusieurs sources pour prédire la volatilité__")
+    st.markdown("""
+                * Entrainer les données sur l'ensemble du dataset
+                * Utiliser plusieurs sources pour prédire la volatilité_
+                """)
    
     
     st.subheader("3- Améliorations de la stratégie")
+     st.markdown("""
+                * Changement du seuil de la volatilité
+                * Imaginer une stratégie totalement différente
+                * Combiner plusieurs stratégies et notamment avec des stratégies d'analyse
+                * Seuils de déclenchement
+                """)
     st.markdown("__Changement du seuil de la volatilité__")
 
     st.markdown("__Imaginer une stratégie totalement différente __")
