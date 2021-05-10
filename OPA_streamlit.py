@@ -179,9 +179,10 @@ if page == '3- Backtesting':
 if page == '4- Conclusion':
     st.image('./images/conclusion.png')
 
-    st.subheader("Récapitulatif")
+    st.header("Récapitulatif")
     st.image('./images/recapitulatif.png')
 
+    st.header("Pistes d'améliorations")
     st.subheader("1- Améliorations des données ")
     st.markdown("* Exploiter une autre valeur cible que la volatilité")
 
