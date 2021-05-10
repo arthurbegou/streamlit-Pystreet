@@ -179,7 +179,7 @@ if page == '4- Conclusions':
     #st.header("4- Conclusions")
     st.image('./images/conclusion.png')
     st.subheader("Conclusion")
-     st.markdown("""
+    st.markdown("""
                 Notre idée de départ, exploiter la volatilité du marché, évoque évidemment le trading haute fréquence (High Frequency Trading) largement utilisé dans le monde de la finance. Cependant, la robustesse de notre algorithme n'est pas suffisante. En effet, même si des gains sont enregistrés, ils le sont seulement sur certaines actions. D'une façon générale, cet algorithme ne permet pas de gagner de façon certaine. 
                 """)
     st.subheader("Limites et pistes d'améliorations")
