@@ -18,7 +18,7 @@ st.sidebar.text("")
 
 
 #Création du menu sidebar
-page = st.sidebar.radio(label = "",  options = ['1- Introduction', '2- Modelisation', '3- Backtesting', '4- Conclusions'])
+page = st.sidebar.radio(label = "",  options = ['1- Introduction', '2- Modelisation', '3- Backtesting', '4- Conclusion'])
 
 #Paramétrage de la sidebar
 st.sidebar.info("__Auteurs__: \n \n \n \n \n Arthur BEGOU [Linkedin](https://bit.ly/3nIL8Xs) \n \n \n \n Thierry MACÉ [Linkedin](https://www.linkedin.com/in/thierry-mac%C3%A9-852b52127/) \n \n \n \n  Data Analyst formation continue, ​​diplomé en Mai 2021, [DataScientest](https://datascientest.com/formation-data-analyst) \n \n \n \n \n _Sources données : [Kaggle.com](https://www.kaggle.com/borismarjanovic/price-volume-data-for-all-us-stocks-etfs)_")
@@ -177,7 +177,7 @@ if page == '3- Backtesting':
           st.write(output)
       
 if page == '4- Conclusion':
-    #st.header("4- Conclusions")
+
     st.subheader("Récapitulatif")
     st.image('./images/recapitulatif.png')
 
