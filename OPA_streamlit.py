@@ -177,6 +177,7 @@ if page == '3- Backtesting':
           st.write(output)
       
 if page == '4- Conclusion':
+    st.image('./images/conclusion.png')
 
     st.subheader("Récapitulatif")
     st.image('./images/recapitulatif.png')
