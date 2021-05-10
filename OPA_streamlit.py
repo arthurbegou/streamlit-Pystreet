@@ -178,8 +178,21 @@ if page == '3- Backtesting':
 if page == '4- Conclusions':
     #st.header("4- Conclusions")
     st.image('./images/conclusion.png')
-    st.subheader("Conclusions")
-    st.subheader("Axes d'améliorations")
+    st.subheader("Conclusion")
+     st.markdown("""
+                Notre idée de départ, exploiter la volatilité du marché, évoque évidemment le trading haute fréquence (High Frequency Trading) largement utilisé dans le monde de la finance. Cependant, la robustesse de notre algorithme n'est pas suffisante. En effet, même si des gains sont enregistrés, ils le sont seulement sur certaines actions. D'une façon générale, cet algorithme ne permet pas de gagner de façon certaine. 
+                """)
+    st.subheader("Limites et pistes d'améliorations")
+    st.markdown("__Changement du seuil de la volatilité__")
+    st.markdown("""
+                Le seuil de volatilité est initialement défini à 0.015; cette valeur est la valeur médiane de la volatilité; cependant, il serait intéressant de faire varier ce seuil pour étudier son impact sur la performance de notre modèle.
+                """)
+    st.markdown("__Seuils de déclenchement__")
+    st.markdown("""
+                Lorsque le seuil de volatilité est atteint notre modèle décide de vendre ou d'acheter sans effectuer aucun autre contrôle. En réalité, les traders fixes des pourcentages de perte et de gains acceptables, il s'agit des niveaux de support et de résistance. La décision prise par le modèle devrait être assujettie à un seuil de pourcentage de gain minimum à partir duquel l'ordre de vente est donné et à un seuil de perte acceptable à partir duquel l'ordre d'achat est donné. Le seuil de déclenchement à la baisse suppose que le trader accepte d'acheter une action pour laquelle une perte est déjà en cours.
+Le modèle développé n'évalue pas le montant de l'investissement à réaliser. Pour la gestion d'un portefeuille d'action, le paramétrage de la proportion d'investissement sur chaque action du portefeuille est nécessaire, par exemple en se basant sur le risque associé à chaque action
+                """)
+
 
 
     
