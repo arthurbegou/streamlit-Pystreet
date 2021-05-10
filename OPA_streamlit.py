@@ -194,7 +194,7 @@ if page == '4- Conclusion':
    
     
     st.subheader("3- Améliorations de la stratégie")
-     st.markdown("""
+    st.markdown("""
                 * Changement du seuil de la volatilité
                 * Imaginer une stratégie totalement différente
                 * Combiner plusieurs stratégies et notamment avec des stratégies d'analyse
