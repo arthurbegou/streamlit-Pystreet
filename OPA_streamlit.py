@@ -184,22 +184,22 @@ if page == '4- Conclusion':
 
     st.header("Pistes d'améliorations")
     st.subheader("1- Améliorations des données ")
-    st.markdown("* Exploiter une autre valeur cible que la volatilité")
+    st.markdown("* Rechercher les actions les plus volatiles")
+    
 
      
     st.subheader("2- Améliorations du machine learning ")
     st.markdown("""
                 * Entrainer les données sur l'ensemble du dataset
-                * Utiliser plusieurs sources pour prédire la volatilité_
+                * Exploiter une autre valeur cible que la volatilité
                 """)
    
     
     st.subheader("3- Améliorations de la stratégie")
     st.markdown("""
                 * Changement du seuil de la volatilité
-                * Imaginer une stratégie totalement différente
-                * Combiner plusieurs stratégies et notamment avec des stratégies d'analyse
-                * Seuils de déclenchement
+                * Imaginer une stratégie totalement différente 
+                * Combiner plusieurs stratégies (avec la Golden Cross)
                 """)
    
    
